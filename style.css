@@ -1,0 +1,54 @@
+body {
+    background-image: url("imgs/bgimg.jpg");
+}
+
+.chessboard {
+    border: 1px solid #ffffff69;
+    border-radius: 16px;
+    border-spacing: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.chessboard td{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+table.chessboard tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+}
+
+table.chessboard tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+}
+
+table.chessboard tr:first-child td:first-child {
+    border-top-left-radius: 16px;
+}
+
+table.chessboard tr:first-child td:last-child {
+    border-top-right-radius: 16px;
+} 
+
+.white {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    
+}
+
+.black {
+    background: burlywood;
+}
+/*  Another way this board could've been done without adding classes: 
+tr:nth-of-type(even) td:nth-last-of-type(odd) {
+    background-color: #ddd
+
+tr:nth-of-type(odd) td:nth-last-of-type(even) {
+    background-color: #ddd
+*/
